@@ -1,0 +1,37 @@
+.novedades{
+    display: flex;
+    justify-content: space-between;
+}
+
+.novedad{
+    align-content: center;
+    transition: 1s;
+    border-radius: 5px;
+    width: 33%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+.novedad img{
+    border-radius: 5%;
+    max-width: 80%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.novedad h5{
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.novedad h6{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.novedad p {
+    color: rgb(139, 104, 16);
+    font-size: 13px;
+}
+
+.novedad:hover{
+    background-color: rgba(0, 0, 0, .2);
+}

@@ -1,0 +1,33 @@
+nav{
+    background-color: rgb(100, 100, 100);
+    margin: 0px ;
+    display: flex;
+    align-content: center;
+    
+    align-items: center;
+}
+
+
+nav ul{ 
+    display: flex;
+    justify-content: space-between;
+    list-style:none; 
+}
+
+nav ul li a{
+    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 3px 6px;
+    text-align: center;
+
+}
+
+nav ul li a:hover{
+    background-color: rgba(0,0,0,0.3);
+
+}
+
+nav ul li a.activo{
+    background-color:rgba(0,0,0,0.3);
+}

@@ -1,0 +1,50 @@
+.holder{
+    text-align: left;
+}
+
+.historia p{
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.personas{
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;  
+    text-align: left;  
+}
+
+
+
+.persona{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona:hover{
+    box-shadow: 0px 0px 60px inset rgba(0,0,0,0.2);
+    transition: 0.5s;
+}
+.persona img{
+    border-radius: 15%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+.persona h6{
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p {
+    color: #666;
+    font-size: 10px;
+}
