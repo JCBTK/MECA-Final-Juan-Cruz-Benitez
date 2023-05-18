@@ -16,19 +16,20 @@ import ContactoPage from './pages/ContactoPage.js';
 
 function App() {
   return (
+   
     <div className="App">
-      <Header />
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<HomePage />}/>
-          <Route path="nosotros" element={<NosotrosPage />}/>
-          <Route path="novedades" element={<NovedadesPage />}/>
-          <Route path="contacto" element={<ContactoPage />}/>
-        </Routes>
-      </BrowserRouter>
-      <Footer />
-    </div>
+
+        <BrowserRouter>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="nosotros" element={<NosotrosPage />} />
+            <Route path="novedades" element={<NovedadesPage />} />
+            <Route path="contacto" element={<ContactoPage />} />
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </div>
   );
 }
 

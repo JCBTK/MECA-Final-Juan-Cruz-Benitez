@@ -20,9 +20,9 @@ const NovedadesPage = (props) => {
 
 
     return (
-        <section className="holder">
+        <section className="Novedades">
             <h2>Novedades</h2>
-
+            <div className="Novedades-noticias">
             {loading ? (
                 <p>cargando...</p>
             ) : (
@@ -30,8 +30,9 @@ const NovedadesPage = (props) => {
                     imagen={item.imagen}
                     title={item.titulo}
                     subtitle={item.subtitulo} 
-                    body={item.cuerpo} />)
+                    body={item.cuerpo} />) 
             )};
+            </div>
         </section>)
 };
 

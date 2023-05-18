@@ -10,7 +10,7 @@ const ContactoPage = (props) =>{
         nombre:'',
         email:'',
         telefono:'',
-        consulta:''
+        mensaje:''
     }
     
     const[sending, setSending] = useState(false);
@@ -41,31 +41,35 @@ const ContactoPage = (props) =>{
    
     return (
         
-        <main>
+        <main className='fondoContacto' >
             <div className='contacto'>
                 <h2>Contacto Rapido</h2>
-                <form className='formulario' onSubmit={handleSubmit}>
+                <form action="/contacto" method="post"className='formulario' onSubmit={handleSubmit}>
+                    <div className='datos-a-llenar'>
                     <p>
                         <label for="nombre">Nombre</label>
-                        <input type="text" name="" value={formData.nombre} onChange={handleChange}></input>
+                        <input type="text" name="nombre" value={formData.nombre} onChange={handleChange}/>
                     </p>
                     <p>
                         <label for="email">Email</label>
-                        <input type="text" name=""value={formData.email} onChange={handleChange}></input>
+                        <input type="text" name="email" value={formData.email} onChange={handleChange}></input>
                     </p>
                     <p>
                         <label for="telefono">Telefono</label>
-                        <input type="text" name=""value={formData.telefono} onChange={handleChange}></input>
+                        <input type="text" name="telefono" value={formData.telefono} onChange={handleChange}></input>
                     </p>
                     <p>
                         <label for="mensaje">Mensaje</label>
-                        <input type="text" name=""value={formData.mensaje} onChange={handleChange}></input>
+                        <input type="text" name="mensaje" value={formData.mensaje} onChange={handleChange}></input>
                     </p>
+                    </div>
                     {sending ? <p>Enviando...</p> : null}
                     {msg ? <p>{msg}</p> : null} 
-                    <p className="centrar">
-                        <input type="submit" value="Enviar"></input>
-                    </p>
+                    <div className='boton'>
+                        <p>
+                            <input type="submit" value="Enviar"></input>
+                        </p>
+                    </div>
                 </form>
             </div>
             <div className="datos">

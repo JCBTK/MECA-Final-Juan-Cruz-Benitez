@@ -6,7 +6,7 @@ import { CSSProperties } from 'D:/CURSO PROGRAMACION/CURSO DE PROGRAMACION WEB F
 const Header = (props) =>{
     return(
         <header>
-            <div className="holder">
+            <div className="Header">
                 <img src="img/meca-logo.png" width="100" alt="Logo Meca"/>
                 <h1>Meca Engineering</h1>
             </div>

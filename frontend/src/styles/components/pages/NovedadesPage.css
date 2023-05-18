@@ -1,19 +1,38 @@
-.novedades{
-    display: flex;
-    justify-content: space-between;
+body{
+    background-color: black;
 }
 
+
+.Novedades{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../../../public/img/novedades/fondo.png);
+    background-size: contain;
+    box-shadow: inset 0px 0px 44px 10px  black;
+}
+.Novedades h2{
+    text-align: center;
+    color: #16db93;
+    
+    
+}
 .novedad{
     align-content: center;
     transition: 1s;
-    border-radius: 5px;
-    width: 33%;
+    border-radius: 20px;
     text-align: center;
     padding: 13px;
     box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(212, 212, 212, 0.268);
 }
 .novedad img{
-    border-radius: 5%;
+    border-radius: 15px;
     max-width: 80%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
@@ -28,10 +47,27 @@
 }
 
 .novedad p {
-    color: rgb(139, 104, 16);
+    color: rgb(183, 183, 183);
     font-size: 13px;
 }
 
-.novedad:hover{
-    background-color: rgba(0, 0, 0, .2);
+
+.textonovedad{
+    color:white;
+}
+
+.novedad h1{
+    font-size: 2rem;
+    text-align: left;
+}
+.novedad h2{
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+}
+.novedad p{
+    text-align: justify;
+}
+.novedad h1 {
+    color: #16db93;
 }
