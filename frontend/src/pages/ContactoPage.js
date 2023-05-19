@@ -73,14 +73,7 @@ const ContactoPage = (props) =>{
                 </form>
             </div>
             <div className="datos">
-                <h2>Otras vias de comunicacion</h2>
-                <p>Tambien puede contactarse con nosotros usando los siguientes medios</p>
-                <ul>
-                    <li>Telefono:2964619342</li>
-                    <li>Email:Meca-E-ARG@hotmail.com</li>
-                    <li>Facebook: @MecaARG</li>
-                    <li>Instagram: @MecaARG</li>
-                </ul>
+              
             </div>
         </main>
     );

@@ -14,7 +14,7 @@ const Nav =(props)=>{
                 </div>
                 <div className='barradeNav'>
                     <ul>
-                        <li><Link to="/" className="custom-btn btn-16">
+                        <li><Link to="/" className="btn third">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -22,7 +22,7 @@ const Nav =(props)=>{
                             Home
                         </Link></li>
                         <li>
-                            <Link to="/nosotros" className="custom-btn btn-16">
+                            <Link to="/nosotros" className="btn third">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -31,7 +31,7 @@ const Nav =(props)=>{
                             </Link>
                         </li>
                         <li>
-                            <Link to="/novedades" className="custom-btn btn-16">
+                            <Link to="/novedades" className="btn third">
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -40,7 +40,7 @@ const Nav =(props)=>{
                             </Link>
                         </li>
                         <li>
-                            <Link to="/contacto" className="custom-btn btn-16">
+                            <Link to="/contacto" className="btn third">
                                 <span></span>
                                 <span></span>
                                 <span></span>

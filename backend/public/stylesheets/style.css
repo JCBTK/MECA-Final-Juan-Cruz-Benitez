@@ -1,4 +1,6 @@
 body {
+  background-image: url(../images/fondo.png);
+  background-size: cover;
   margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -7,57 +9,313 @@ a {
   color: #00B7FF;
 }
 
-footer{
-  background-color: #ccc;
+footer {
   clear: both;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   padding: 50px 0;
-  margin-top:20px ;
 }
 
-header{
-  background-color: rgb(206, 197, 192);
+header {
+  display: flex;
+  margin-left: 40px;
   padding: 16px 0;
+  align-items: center;
+
 }
-header h1{
-  color: rgb(0, 0, 0);
+
+header h1 {
+  color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: 500;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  display: inline-block;
-  margin-left: 10px;
+  margin-left: 20px;
+
 }
-nav{
-  background-color: rgb(100, 100, 100);
-  margin: 0px ;
+
+nav {
+  margin: 0px;
   display: flex;
   align-content: center;
   align-items: center;
 }
 
-
-nav ul{ 
+nav ul {
   display: flex;
   justify-content: space-between;
-  list-style:none; 
+  list-style: none;
 }
 
-nav ul li a{
-  
+nav ul li a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 3px 6px;
   text-align: center;
-
 }
 
-nav ul li a:hover{
-  background-color: rgba(0,0,0,0.3);
-
+nav ul li a.activo {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-nav ul li a.activo{
-  background-color:rgba(0,0,0,0.3);
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  justify-content: center;
 }
 
+.container-login {
+  background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 212, 212, 0.268);
+  border-radius: 1rem;
+  display: flex;
+  width: 40%;
+  align-items: center;
+  padding: 20px;
+  justify-items: center;
+}
+
+.datos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dato {
+  margin: 30px 0px 30px 0px
+}
+
+form {
+  width: 100%;
+}
+
+.llenar {
+  color: rgb(255, 255, 255);
+  display: flex;
+  text-align: center;
+  background-color: #d4d4d446;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(180, 180, 180, 0.268);
+  width: 100%;
+  border-radius: 1rem;
+  text-shadow: 0px 0px 8px black;
+}
+
+.llenar:hover {
+  border: 1px solid rgba(180, 180, 180, 0.268);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.442);
+}
+
+.llenar::before,
+.llenar::after {
+  color: white;
+}
+
+.datos p {
+  color: white
+}
+
+.Novedades {
+  width: 90%;
+}
+
+.novedades {
+  background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 212, 212, 0.268);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  padding: 20px;
+  justify-items: center;
+  margin: 40px;
+}
+
+.botones {
+  display: flex;
+  width: 90%;
+  justify-content: flex-end;
+  margin-left: 5%;
+}
+
+.botones a {
+  color: white;
+}
+
+tbody {
+  background-color: #d2d2d27d;
+}
+
+.col{
+  border-radius: 1rem;
+}
+
+.col-7 h3,
+.col-7 p {
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
+
+.table td {
+  color: rgb(0, 0, 0);
+  text-shadow: 0px 0px 8px black;
+}
+
+.cabezal {
+  color: white;
+  background-color: #52525247;
+}
+.table tr{
+  color: rgb(255, 255, 255);
+  text-shadow: black 0px 0px 5px;
+}
+
+.table{
+  border-radius: 1rem;
+}
+
+.boton1{
+  color:rgb(78 ,78 ,78);
+  background-color: #d4d4d446 ;
+  border-radius: 1rem;
+  border: #cdcdcd42 solid 1px;
+  padding: 0px 20px;
+  
+}
+
+.boton1:hover {
+  border: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.442);
+}
+
+.boton1::before,
+.boton1::after {
+  color: white;
+}
+.modificar{
+  background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 212, 212, 0.268);
+  border-radius: 1rem;
+  padding: 20px;
+}
+
+.modificar h4{
+  margin: 30px 0px;
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
+
+label{
+  color: white;
+  text-shadow: 0px 0px 8px black;
+}
+.botonimagen{
+  background-color: #00B7FF;
+}
+.Imagen{
+  width: 100%;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-shadow: 0px 0px 8px black;
+}
+.btn-6 {
+  background: rgb(45, 218, 189);
+  background: radial-gradient(circle, #72af9d 0%, rgb(51, 92, 141) 100%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+  box-shadow:
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.btn-6:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.btn-6:hover{
+  background: radial-gradient(circle, #72af9d 0%, rgb(51, 92, 141) 100%);
+  color: #ffffff;
+  text-shadow: none;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  box-shadow:
+   -1px -1px 20px 0px rgb(255, 255, 255),
+   -4px -4px 5px 0px rgba(255,255,255,1),
+   7px 7px 20px 0px rgba(0,0,0,.4),
+   4px 4px 5px 0px rgba(0,0,0,.3);
+}
+.btn-6 span:before {
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:after {
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: .5px;
+  transition: all 500ms ease;
+}
+.btn-6 span:hover:before {
+  width: 100%;
+}
+.btn-6 span:hover:after {
+  width: 100%;
+}

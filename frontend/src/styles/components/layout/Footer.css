@@ -1,3 +1,8 @@
+.fondofooter{
+  background-image: url(../../../../public/img/footer/fondo.png);
+  background-size: 100vw;
+}
+
 
 *:focus,
 *:active {
@@ -7,7 +12,6 @@
 
 html,
 body {
- 
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -16,7 +20,7 @@ body {
 }
 
 footer{
-  width: 80%;
+  width: 100%;
   background: black;
   font-family: "Poppins", sans-serif;
   display: inline-flex;
@@ -24,8 +28,8 @@ footer{
   align-items: center;
 }
 .wrapper {
+  padding: 0px 30px;
   margin: 15px;
-  padding: 0;
   width: 25%;
   display: inline-flex;
   list-style: none;
@@ -135,6 +139,7 @@ footer{
 }
 
 .derechos h1{
+  margin-left: 20px ;
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
   font-weight: 100;

@@ -32,8 +32,10 @@ body{
     border:1px solid rgba(212, 212, 212, 0.268);
 }
 .novedad img{
+    
     border-radius: 15px;
     max-width: 80%;
+    height: 30vh;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .novedad h5{

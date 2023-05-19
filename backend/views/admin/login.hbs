@@ -1,17 +1,17 @@
-<div class="container" style="margin-top: 100px;">
-    <div class="row">
+<div class="container-login" >
+    <div class="datos">
         <form action="/admin/login" method="post">
-            <div class="mb-3 row">
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputUser" placeholder="Usuario" name="usuario">
+            <div class="dato">
+                <div class="contenedor-llenar">
+                    <input type="text" class="llenar" id="inputUser" placeholder="Usuario" name="usuario">
                 </div>
             </div>
-            <div class="mb-3 row">
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password">
+            <div class="dato">
+                <div class="contenedor-llenar">
+                    <input type="password" class="llenar" id="inputPassword" placeholder="Password" name="password">
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <button type="submit" class="boton1" >Ingresar</button>
         </form>
         {{#if error}}
             <p>usuario y/o contrase;a incorrectos</p>
